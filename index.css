@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #c92a2a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 550px;
+}
+
+.box-biodata {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ff6b6b;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  gap: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.box-biodata:hover {
+  transform: translateY(-5px);
+}
+
+.profile-section {
+  text-align: center;
+}
+
+#profil-logo {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #ff6b6b;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  transition: transform 0.3s ease;
+}
+
+#profil-logo:hover {
+  transform: scale(1.05);
+}
+
+.info-section {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.info-item {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.label {
+  font-weight: 600;
+  color: #ff6b6b;
+  min-width: 60px;
+}
+
+.value {
+  color: #555;
+  font-weight: 500;
+}
+
+.badge-section {
+  width: 100%;
+  text-align: center;
+}
+
+.badge-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #c92a2a 100%);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+  cursor: pointer;
+}
+
+.badge:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+}
+
+.badge:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .box-biodata {
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  #profil-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .badge {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
